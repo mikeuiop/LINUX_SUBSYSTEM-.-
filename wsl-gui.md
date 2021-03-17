@@ -1,10 +1,10 @@
 This is mostly taken from [Shogan's blog](https://www.shogan.co.uk/how-tos/wsl2-gui-x-server-using-vcxsrv/) which also covers PulseAudio.
 
-Prerequisites:
+## Prerequisites
 - You'll need admin privileges in Windows to install a software.
 - Around 1.5 GB of data will be downloaded so be mindful if you are on a limited data connection. 
 
-Steps:
+## Steps
 - Firstly, update your packages using `sudo apt update` and `sudo apt dist-upgrade`. 
 - On Ubuntu shell install Xfce using `sudo apt install xfce4 xfce4-goodies`. On Kali linux it can be installed using `sudo apt install kali-desktop-xfce`.
 - Xfce would be paused in mid-install. You’ll be prompted about which display manager to use. This is up to you, I chose lightdm.
@@ -21,7 +21,7 @@ Steps:
 - Now you can open aopen any program to verify it. For example, I can find correct location of Sublime Merge using `which -a smerge` and launch it.
 - Onivim 2, on the other hand opens but shows black screen. To fix that, open system tray on Windows, right click on VcXsrv icon and close it. Open a bash shell and enter `export LIBGL_ALWAYS_INDIRECT=0` and Launch VcXsrv again but this time on third screen untick Native opengl. Try running the app again.
 
-Notes:
+## Notes
 - There is this [other method on the same lines](https://skeptric.com/wsl2-xserver/). 
 - There is a good [explanation on `LIBGL_ALWAYS_INDIRECT` var on StackOverflow](https://superuser.com/a/1487558).
 - For that black screen fix, they suggest installing `mesa-utils` on Ubuntu but it worked for me without it (see the [related issue here](https://github.com/microsoft/WSL/issues/2855)). 
