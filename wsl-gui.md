@@ -1,4 +1,4 @@
-This is taken mostly from [Shogan's blog](https://www.shogan.co.uk/how-tos/wsl2-gui-x-server-using-vcxsrv/) which also covers PulseAudio.
+This is mostly taken from [Shogan's blog](https://www.shogan.co.uk/how-tos/wsl2-gui-x-server-using-vcxsrv/) which also covers PulseAudio.
 
 Prerequisites:
 - You'll need admin privileges in Windows to install a software.
