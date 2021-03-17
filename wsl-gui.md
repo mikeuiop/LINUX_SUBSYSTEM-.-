@@ -22,7 +22,7 @@ Steps:
 - Onivim 2, on the other hand opens but shows black screen. To fix that, open system tray on Windows, right click on VcXsrv icon and close it. Open a bash shell and enter `export LIBGL_ALWAYS_INDIRECT=0` and Launch VcXsrv again but this time on third screen untick Native opengl. Try running the app again.
 
 Notes:
-- There is a good [explanation on `LIBGL_ALWAYS_INDIRECT` var on StackOverflow](https://superuser.com/a/1487558).
 - There is this [other method on the same lines](https://skeptric.com/wsl2-xserver/). 
+- There is a good [explanation on `LIBGL_ALWAYS_INDIRECT` var on StackOverflow](https://superuser.com/a/1487558).
 - For that black screen fix, they suggest installing `mesa-utils` on Ubuntu but it worked for me without it (see the [related issue here](https://github.com/microsoft/WSL/issues/2855)). 
 - There is also a [post from Microsoft on GUI/WSL2](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242).
