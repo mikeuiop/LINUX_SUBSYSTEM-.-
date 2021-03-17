@@ -21,4 +21,4 @@ Steps:
 - Now you can open aopen any program to verify it. For example, I can find correct location of Sublime Merge using `which -a smerge` and launch it.
 - Onivim 2, on the other hand opens but shows black screen. To fix that, open system tray on Windows, right click on VcXsrv icon and close it. Open a bash shell and enter `export LIBGL_ALWAYS_INDIRECT=0` and Launch VcXsrv again but this time on third screen untick Native opengl. Try running the app again.
 
-There is this [other method on the same lines](https://skeptric.com/wsl2-xserver/). For that black screen fix, they suggest installing `mesa-utils` on Ubuntu but it worked for me without it (see the [related issue here](https://github.com/microsoft/WSL/issues/2855)).
+There is this [other method on the same lines](https://skeptric.com/wsl2-xserver/). For that black screen fix, they suggest installing `mesa-utils` on Ubuntu but it worked for me without it (see the [related issue here](https://github.com/microsoft/WSL/issues/2855)). There is also a [post from Microsoft on GUI/WSL2](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242)
